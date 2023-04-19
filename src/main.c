@@ -1,6 +1,6 @@
 /* loop principal */
 
-#define UARTBASE 0x101f1000     //registro base de la UART0
+#define UARTBASE  0x10009000    //registro base de la UART0
 #define UARTTXBUF UARTBASE+0    //registro buffer de transmision
 
 //-------------------------------------------------------------------

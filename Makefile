@@ -24,6 +24,7 @@ LST=lst/
 LD=memmap.ld
 
 #placa a emular en la maquina virtual de QEMU
+#BOARD=versatilepb
 BOARD=realview-pb-a8
 #otras placas posibles a emular descomentar la que se quiera usar
 #BOARD=mcimx6ul-evk
