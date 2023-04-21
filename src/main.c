@@ -1,7 +1,7 @@
 /* loop principal */
 
 #define UARTBASE  0x10009000    //registro base de la UART0
-#define UARTTXBUF UARTBASE+0    //registro buffer de transmision
+#define UARTDREG UARTBASE+0    //registro buffer de transmision
 
 //-------------------------------------------------------------------
 // funciones externas
@@ -15,7 +15,7 @@ int main ( void )
     for(ra=0;;ra++)
     {
         ra&=7;
-        PUT32(UARTTXBUF,0x30+ra);
+        PUT32(UARTDREG,0x30+ra);
     }
 
     return(0);
