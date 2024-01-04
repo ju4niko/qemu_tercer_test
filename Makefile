@@ -63,7 +63,7 @@ $(OBJ)$(APP).elf: $(OBJ)$(ACODE).o $(OBJ)$(CCODE).o
 	@echo "Linkeo finalizado!!"
 	@echo ""
 	@echo "Generando archivos de información: mapa de memoria y símbolos"
-	readelf -a $(OBJ)$(APP).elf > $(LST)$(APP).txt
+	objdump -t $(OBJ)$(APP).elf > $(LST)$(APP).txt
 	$(CHAIN)-objdump -D $(OBJ)$(APP).elf > $(LST)$(APP).lst
 
 #ensamblado del codigo en assembler
